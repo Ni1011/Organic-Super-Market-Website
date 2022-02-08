@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* home */
+#hom{
+    height: 100vh;
+}
+#navmain{
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    /* background-image: linear-gradient(to right top, #91e84f, #66e079, #46d698, #43c9ad, #5bbab4); */
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-family: 'Baloo Bhaina 2', cursive;
+    /* font-family: 'PT Sans', sans-serif; */
+    z-index: 2;
+
+}
+#navbar1{
+    display: flex;
+    align-items: center;
+    height: 7.5vh;
+    justify-content: space-around;
+}
+#navbar2{
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    justify-content: space-around;
+    background: white;
+}
+#navbar2 div{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+#navbar2 div .pin a{
+    text-decoration: none;
+}
+#navbar3{
+    display: flex;
+    align-items: center;
+    height: 7.5vh; 
+    justify-content: space-around;
+    background: #fff;
+}
+.search,.search input{
+    flex: 1 0 auto;
+    outline: 0;
+    background: rgba(236, 240, 237, 0.4);
+    border: 1px solid rgba(34,36,38,.15);
+    color: rgba(0,0,0,.87);
+    border-radius: 4rem;
+}
+.search input{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    /* border: 0!important; */
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    outline: 0;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#navbar3 ul{
+    display: flex;
+}
+#navbar3 ul li{
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+#navbar3 ul li a{
+    display: block;
+    padding: 1px 20px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 8px;
+    
+}
+/* #search img{
+    height: 30px;
+} */
+.btn{
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+marquee {
+    right: 30%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0;
+    padding-top: 9px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.socials{
+    display: flex;
+}
+.social a,.carts a{
+    display: flex;
+    background: #e3f7ed;
+    height: 35px;
+    width: 35px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7); */
+    border: 1px solid rgba(0,0,0,0.0);
+    transition: transform 0.5s ease-in-out;
+}
+.social a i{
+    font-size: 30px;
+    color: #777;
+    transition: transform 0.5s ease-in-out;
+}
+.carts a i{
+    font-size: 20px;
+    color: #777;
+    transition: transform 0.5s ease-in-out;
+}
+.social a:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.01);
+
+    transform: translateY(2px);
+}
+.social a:hover i,.carts a:hover i{
+    transform: scale(0.90);
+} 
+.social a:hover .fa-facebook,.carts a:hover .fa-shopping-cart{
+    color: #3b5998;
+}
+.social a:hover .fa-twitter{
+    color: #00acee;
+}
+.social a:hover .fa-instagram,.carts a:hover .fa-heart{
+    color: #f14843;
+}
+.pin a img{
+    height: 20px;
+    border: 50%;
+}
+.pin a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+.logo img{
+    height: 100px;
+}
+.carts img{
+    height: 30px;
+    padding: 0.5rem;
+}
+.carts{
+    padding: 0.5rem;
+}
+.login a:hover,.pin a:hover{
+    color: tomato;
+}
+.backimg img{
+    width: 100%;
+    height: 65vh;
+}
+.login a{
+    text-decoration: none;
+    padding: 0.2rem;
+}
+.category a{
+    text-decoration: none;
+    padding: 0.7rem;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: white;
+}
+.button ul li a{
+    padding: 20px 30px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    /* letter-spacing: 2px; */
+    color: black;
+    font-size: 18px;
+    border-radius: 40px;
+    box-shadow: -2px -2px 8px rgba(255,255,255,1),-2px -2px 12px rgba(255,255,255,0.5),inset 2px 2px 4px rgba(255,255,255,0.1),2px 2px 8px rgba(0,0,0,0.15);
+}
+.button ul li a span{
+    transition: all 0.6s ease-in-out;
+}
+.button ul li a:hover{
+    box-shadow: inset -2px -2px 8px rgba(255,255,255,1),inset -2px -2px 12px rgba(255,255,255,0.5),inset 2px 2px 4px rgba(255,255,255,0.1),inset 2px 2px 8px rgba(0,0,0,0.15);
+}
+.button ul li a:hover span{
+    display: inline-block;
+    transform: scale(0.98);
+    color: red;
+}
+.backimg::before{
+    content: "";
+    background: url("back1.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 65vh;
+    width: 100%;
+    z-index: -1;
+    animation: test 20s infinite linear;
+}
+@keyframes test {
+    0%,10%,20%{
+      background-image: url("back1.jpg");
+    }
+    30%,40%,50%,60%{
+      background-image: url("back2.png");
+    }
+    70%,80%,90%{
+      background-image: url("back3.jpg");
+    }
+    100%{
+      background-image: url("back1.jpg");
+    }
+  }
+/* Shop by Categories */
+#Categories{
+    height: 100vh;
+}
+#Categories .h-primary,#concern .h-primary
+{
+    color: red;
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-decoration: underline;
+}
+.category-img{
+    padding: 40px;
+}
+.catimg{
+    display: flex;
+    justify-content: center;
+}
+
+.cat img{
+    height: 300px;
+    margin-left: 37px;
+}
+.center{
+    text-align: center;
+}
+/* concern */
+#concern{
+    height: 60vh;
+}
+.concern-img{
+    display: flex;
+    justify-content: center;
+    
+}
+.con h2 a{
+    justify-content: center;
+}
+.con img{
+    height: 180px;
+    margin: 3rem;
+}
+.h-secondary a{
+    text-decoration: none;
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: black;
+    font-size: medium;
+}
+/* Product */
+#products{
+    height: 70vh;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.product{
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    margin: 20px;
+    padding: 20px;
+    box-shadow: inset 0 0 5px grey; 
+    justify-content: center;
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+   border: 1px solid black;
+   border-radius: 12px;
+   width: 17rem;
+}
+.box .carts{
+    display: flex;
+    justify-content: space-between;
+}
+.box-img a {
+    text-decoration: none;
+    color: black;
+    transition: transform .5s ease;
+}
+.box-img a img:hover {
+    animation: shake 0.5s infinite;
+}
+  
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  } 
+.add{
+    background-color:rgb(254,1,1);
+    border: 1px solid rgb(254,1,1);
+    text-decoration-style: none;
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+    padding: 3px;
+}
+.box-img a img{
+    height: 200px;
+}
+.box .carts{
+    display: flex;
+    justify-content: space-between;
+}
+.carts span{
+    background: #e3f7ed;
+    color: #777;
+    padding: 0.4rem;
+    border-radius: 8px;
+    text-align: center;
+}
+/* Subscribe */
+#Subscribe{
+    background: url("Subscribe.png") no-repeat center center/cover;
+    font-family: 'Baloo Bhaina 2', cursive;
+    /* font-family: 'PT Sans', sans-serif; */
+    /* height: 40vh; */
+}
+.input-group {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+}
+.single p{
+    font-size: 2rem;
+    color: darkred;
+}
+.single .form-control {
+    height: 50px;
+    background: rgba(255,255,255,.6);
+    border-radius: 20px 0 0 20px;
+}
+.form-control{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+}
+#leadgenaration {
+    display: inline-block;
+    cursor: text;
+    margin: 0em;
+    padding: 1px 20px;
+    width: 25rem;
+    flex: 1 0 auto;
+    outline: 0;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.btn1{
+    height: 50px;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    border-radius: 0px 20px 20px 0px;
+    color: #fff;
+    border: none;
+    font-family: 'Baloo Bhaina 2', cursive;
+    padding: 1rem;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;
+}
+.btn1:hover {
+    color: #d8eba3;
+    display: inline-block;
+}
+.newbrand{
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+    margin: 0rem;
+    padding-top: 2rem;
+}
+.footlabel{
+    display: flex;
+}
+.footlabel img{
+    height: 50px;
+}
+.single{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+/* last */
+.row{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,.07);
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.second-row-item{
+    flex: 1;
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
+    padding: 1rem;
+    margin: 2rem;
+    font-size: small;
+    /* background: linear-gradient(to right top, #91e84f, #66e079, #46d698, #43c9ad, #5bbab4); */
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+.second-row-item p{
+    color: #e3f7ed;
+}
+.second-row-item a img{
+    height: 150px;
+}
+.linknapp{
+    display: flex;
+    flex: 3;
+}
+.second-row-item-link{
+    flex: 1;
+}
+.second-row-item-link h4{
+    font-family: 'Baloo Bhaina 2', cursive;
+    padding: 1rem;
+    font-size: large;
+    text-decoration: underline;
+    text-decoration-color: #20CD78;
+}
+.all-link{
+    display: flex;
+}
+.linklist{
+    list-style-type: '>';
+}
+.linklist li a{
+    text-decoration: none;
+    color: #495057;
+    font-size: medium;
+    /* padding: 1rem; */
+    margin: 2rem;
+    transition: all 0.4s ease-in-out;
+}
+.linklist li a:hover{
+    color: tomato;
+}
+/* footor */
+.footer{
+    font-family: 'Baloo Bhaina 2', cursive;
+    background-color: black;
+    color: white;
+    padding: 6px 20px;
+    font-size: small;
+}
+/* about us & blog */
+.aboutus,.recipes{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: larger;
+    padding: 2rem 8rem 2rem 8rem;
+}
+.about-content{
+    color: #777;
+}
+.recipeimg img{
+   height: 350px;
+}
+.recipeimg,.info{
+    margin: 20px;
+    padding: 20px;
+    box-shadow: inset 0 0 5px grey; 
+    font-family: 'Baloo Bhaina 2', cursive;
+   border: 1px solid grey;
+   border-radius: 12px;
+}
+.info a,p{
+    font-size: medium;
+    text-decoration: none;
+    color: #008793;
+}
+.info a:hover{
+    text-decoration: underline;
+    color: #f14843;
+}
